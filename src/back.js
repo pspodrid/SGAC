@@ -1,9 +1,8 @@
 export class Sgac {
-  constructor(human) {
+  constructor(age) {
     this.age = age;
   }
 
   mercuryCalc() {
-    let num = 5;
   }
 }
