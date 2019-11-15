@@ -35,6 +35,10 @@ describe('Sgac', () => {
   })
   test('should take in an expected age and return expected age on mars', () => {
     let sgac = new Sgac(10,100);
-    expect(sgac.marsExCalc()).toEqual("hi")
+    expect(sgac.marsExCalc()).toEqual(188)
+  })
+  test('should take in an expected age and return expected age on jupiter', () => {
+    let sgac = new Sgac(10,100);
+    expect(sgac.jupExCalc()).toEqual("hi")
   })
 });

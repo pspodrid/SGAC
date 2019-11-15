@@ -45,9 +45,14 @@ export class Sgac {
     return this.venAgeEx
   }
   marsExCalc() {
-    // let marsExAgeTest = (this.expected * 1.88)
-    // this.marsAgeEx = marsExAgeTest
-    // return this.marsAgeEx
+    let marsExAgeTest = (this.expected * 1.88)
+    this.marsAgeEx = marsExAgeTest
+    return this.marsAgeEx
+  }
+  jupExCalc() {
+    // let jupExAgeTest = (this.expected * 11.86)
+    // this.jupAgeEx = jupExAgeTest
+    // return this.jupAgeEx
     return "hi"
   }
 }
