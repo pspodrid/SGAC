@@ -9,25 +9,27 @@ export class Sgac {
   }
 
   mercuryCalc() {
-    let mercAgeTest = (this.age * 4.15)
-     this.mercAge = mercAgeTest
+    let mercAgeTest = parseFloat(this.age * 4.15)
+    let mercAgeParse = parseFloat(mercAgeTest)
+     this.mercAge = mercAgeParse
      return this.mercAge
   }
   venusCalc() {
-    let venusAgeTest = (this.age * 1.62)
-    this.venAge = venusAgeTest
+    let venusAgeTest = parseFloat(this.age * 1.62)
+    let venAgeParse = parseFloat(venusAgeTest)
+    this.venAge = venAgeParse
     return this.venAge
   }
   marsCalc() {
-    let marsAgeTest = (this.age * .53)
-    let marsAgeRounded = marsAgeTest
-    this.marsAge = marsAgeRounded
+    let marsAgeTest = parseFloat(this.age * .53)
+    let marsAgeParse = parseFloat(marsAgeTest)
+    this.marsAge = marsAgeParse
     return this.marsAge
   }
   jupCalc() {
-    let jupAgeTest = (this.age * .084)
-    let jupAgeRounded =  jupAgeTest
-    this.jupAge = jupAgeRounded
+    let jupAgeTest = parseFloat(this.age * .084)
+    let jupAgeParse =  parseFloat(jupAgeTest)
+    this.jupAge = jupAgeParse
     return this.jupAge
   }
 }
