@@ -29,9 +29,14 @@ export class Sgac {
     return this.marsAge
   }
   jupCalc() {
-    // let jupAgetest = (this.age * 11.86)
-    // let jupAgeRounded =  (jupAgeTest.tofixed(1))
-    // this.jupAge = jupAgeRounded
-    return "hi"
+    let jupAgeTest = (this.age * 11.86)
+    let jupAgeRounded =  (jupAgeTest.toFixed(1))
+    this.jupAge = jupAgeRounded
+    return this.jupAge
+  }
+  mercuryExCalc() {
+    let mercExAgeTest = this.expected * .24)
+    this.mercAgeEx = mercExAgeTest
+    return this.MercAgeEx
   }
 }
