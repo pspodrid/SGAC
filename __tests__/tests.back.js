@@ -9,4 +9,8 @@ describe('Sgac', () => {
     expect(sgac.age).toEqual(5);
     expect(sgac.expected).toEqual(10);
   });
+  test('should take in a number and return age on mercury', () => {
+    let sgac = new Sgac(10,100);
+    expect(sgac.mercuryCalc()).toEqual("hi")
+  });
 });
