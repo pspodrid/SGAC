@@ -24,8 +24,14 @@ export class Sgac {
   }
   marsCalc() {
     let marsAgeTest = (this.age * 1.88)
-    let marsAgeTestRounded = (marsAgeTest.toFixed(1))
-    this.marsAge = marsAgeTestRounded
+    let marsAgeRounded = (marsAgeTest.toFixed(1))
+    this.marsAge = marsAgeRounded
     return this.marsAge
+  }
+  jupCalc() {
+    // let jupAgetest = (this.age * 11.86)
+    // let jupAgeRounded =  (jupAgeTest.tofixed(1))
+    // this.jupAge = jupAgeRounded
+    return "hi"
   }
 }
