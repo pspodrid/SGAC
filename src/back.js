@@ -35,8 +35,8 @@ export class Sgac {
     return this.jupAge
   }
   mercuryExCalc() {
-    let mercExAgeTest = this.expected * .24)
+    let mercExAgeTest = (this.expected * .24)
     this.mercAgeEx = mercExAgeTest
-    return this.MercAgeEx
+    return this.mercAgeEx
   }
 }
