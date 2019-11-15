@@ -1,64 +1,33 @@
 export class Sgac {
-  constructor(age, expected) {
+  constructor(age) {
     this.age = age;
-    this.expected = expected;
+    this.expected = 79;
     this.mercAge = 0;
-    this.mercAgeEx = 0;
     this.venAge = 0;
-    this.venAgeEx = 0;
     this.marsAge = 0;
-    this.marsAgeEx = 0;
     this.jupAge = 0;
-    this.jupAgeEx = 0;
   }
 
   mercuryCalc() {
-    let mercAgeTest = (this.age * .24)
+    let mercAgeTest = (this.age * 4.15)
      this.mercAge = mercAgeTest
      return this.mercAge
   }
   venusCalc() {
-    let venusAgeTest = (this.age * .62)
+    let venusAgeTest = (this.age * 1.62)
     this.venAge = venusAgeTest
     return this.venAge
   }
   marsCalc() {
-    let marsAgeTest = (this.age * 1.88)
-    let marsAgeRounded = (marsAgeTest.toFixed(1))
+    let marsAgeTest = (this.age * .53)
+    let marsAgeRounded = marsAgeTest
     this.marsAge = marsAgeRounded
     return this.marsAge
   }
   jupCalc() {
-    let jupAgeTest = (this.age * 11.86)
-    let jupAgeRounded =  (jupAgeTest.toFixed(1))
+    let jupAgeTest = (this.age * .084)
+    let jupAgeRounded =  jupAgeTest
     this.jupAge = jupAgeRounded
     return this.jupAge
-  }
-  mercuryExCalc() {
-    let mercExAgeTest = (this.expected * .24)
-    this.mercAgeEx = mercExAgeTest
-    return this.mercAgeEx
-  }
-  venusExCalc() {
-    let venusExAgeTest = (this.expected * .62)
-    this.venAgeEx = venusExAgeTest
-    return this.venAgeEx
-  }
-  marsExCalc() {
-    let marsExAgeTest = (this.expected * 1.88)
-    this.marsAgeEx = marsExAgeTest
-    return this.marsAgeEx
-  }
-  jupExCalc() {
-    let jupExAgeTest = (this.expected * 11.86)
-    this.jupAgeEx = jupExAgeTest
-    return this.jupAgeEx
-  }
-  livingOrDying() {
-    let earthYearsLeft = (this.expected - this.age)
-    let mercYearsLeft = (this.mercAgeEx - this.MercAge)
-    let venAgeLeft = (this.venAgeEx - this.venAge)
-    let marsYearsLeft = (this.marsAgeEx - this.marsAge)
-    let jupAgeLeft = (this.jupAgeEx - this.jupAge)
   }
 }
