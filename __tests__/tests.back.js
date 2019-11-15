@@ -41,4 +41,8 @@ describe('Sgac', () => {
     let sgac = new Sgac(10,100);
     expect(sgac.jupExCalc()).toEqual(1186)
   })
+  test('should take in a users age and return how long they have to live', () => {
+    let sgac = new Sgac(10,100);
+    expect(sgac.livingOrDying()).toEqual(90)
+  })
 });

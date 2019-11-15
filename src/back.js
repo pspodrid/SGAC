@@ -54,4 +54,8 @@ export class Sgac {
     this.jupAgeEx = jupExAgeTest
     return this.jupAgeEx
   }
+  livingOrDying() {
+    let yearsLeft = (this.expected - this.age)
+    return yearsLeft
+  }
 }
