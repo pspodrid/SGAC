@@ -22,4 +22,8 @@ describe('Sgac', () => {
     let sgac = new Sgac(10);
     expect(sgac.jupCalc()).toEqual(.84)
   })
+  test('should take in an age and return how long they have to live on earth', () => {
+    let sgac = new Sgac(10);
+    expect(sgac.livingOrDying()).toEqual("hi")
+  })
 });
