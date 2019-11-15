@@ -50,9 +50,8 @@ export class Sgac {
     return this.marsAgeEx
   }
   jupExCalc() {
-    // let jupExAgeTest = (this.expected * 11.86)
-    // this.jupAgeEx = jupExAgeTest
-    // return this.jupAgeEx
-    return "hi"
+    let jupExAgeTest = (this.expected * 11.86)
+    this.jupAgeEx = jupExAgeTest
+    return this.jupAgeEx
   }
 }
