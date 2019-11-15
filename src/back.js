@@ -40,9 +40,8 @@ export class Sgac {
     return this.mercAgeEx
   }
   venusExCalc() {
-    // let venusExAgeTest = (this.expected * .24)
-    // this.venAgeEx = venusExAgeTest
-    // return this.venAgeEx
-    return "hi"
+    let venusExAgeTest = (this.expected * .62)
+    this.venAgeEx = venusExAgeTest
+    return this.venAgeEx
   }
 }
