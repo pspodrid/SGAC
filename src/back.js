@@ -22,4 +22,9 @@ export class Sgac {
     this.venAge = venusAgeTest
     return this.venAge
   }
+  marsCalc() {
+    // let marsAgeTest = (this.age * 1.88)
+    // this.marsAge = marsAgeTest
+    return "error404"
+  }
 }
