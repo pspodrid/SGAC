@@ -55,7 +55,10 @@ export class Sgac {
     return this.jupAgeEx
   }
   livingOrDying() {
-    let yearsLeft = (this.expected - this.age)
-    return yearsLeft
+    let earthYearsLeft = (this.expected - this.age)
+    let mercYearsLeft = (this.mercAgeEx - this.MercAge)
+    let venAgeLeft = (this.venAgeEx - this.venAge)
+    let marsYearsLeft = (this.marsAgeEx - this.marsAge)
+    let jupAgeLeft = (this.jupAgeEx - this.jupAge)
   }
 }
