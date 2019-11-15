@@ -38,10 +38,15 @@ export class Sgac {
   }
   livingOrDying() {
     let timeLeftOnEarth = (this.expected - this.age)
-    return timeLeftOnEarth
-    // let timeLeftOnMerc =
-    // let timeLeftOnVen =
-    // let timeLeftOnMars =
-    // let timeLeftOnJup =
+    if (timeLeftOnEarth > 0) {
+      return "You have " + timeLeftOnEarth + "years left to live"
+    } else {
+      return "You should have died " + this.age - this.expected + "years ago "
+    }
   }
 }
+
+    // let timeLeftOnMerc = (this.expected - this.mercAge)
+    // let timeLeftOnVen = (this.expected - this.venAge)
+    // let timeLeftOnMars = (this.expected - this.marsAge)
+    // let timeLeftOnJup = (this.expected - this.jupAge)
