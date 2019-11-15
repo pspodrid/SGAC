@@ -17,4 +17,7 @@ export class Sgac {
      this.mercAge = mercAgeTest
      return this.mercAge
   }
+  venusCalc() {
+    return "hi"
+  }
 }
