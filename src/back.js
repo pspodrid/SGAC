@@ -41,7 +41,7 @@ export class Sgac {
     if (timeLeftOnEarth > 0) {
       return "You have " + timeLeftOnEarth + "years left to live"
     } else {
-      return "You should have died " + this.age - this.expected + "years ago "
+      return "You should have died " + (this.age - this.expected) + "years ago"
     }
   }
 }
