@@ -15,6 +15,6 @@ describe('Sgac', () => {
   });
   test('should take in a number and return age on venus', () => {
     let sgac = new Sgac(10,100);
-    expect(sgac.venusCalc()).toEqual("hi")
+    expect(sgac.venusCalc()).toEqual(6.2)
   })
 });

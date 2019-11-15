@@ -18,6 +18,8 @@ export class Sgac {
      return this.mercAge
   }
   venusCalc() {
-    return "hi"
+    let venusAgeTest = (this.age * .62)
+    this.venAge = venusAgeTest
+    return this.venAge
   }
 }
