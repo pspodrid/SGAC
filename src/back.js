@@ -13,6 +13,8 @@ export class Sgac {
   }
 
   mercuryCalc() {
-    return "hi"
+    let mercAgeTest = (this.age * .24)
+     this.mercAge = mercAgeTest
+     return this.mercAge
   }
 }

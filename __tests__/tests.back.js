@@ -11,6 +11,6 @@ describe('Sgac', () => {
   });
   test('should take in a number and return age on mercury', () => {
     let sgac = new Sgac(10,100);
-    expect(sgac.mercuryCalc()).toEqual("hi")
+    expect(sgac.mercAge.mercuryCalc()).toEqual(2.4);
   });
 });
