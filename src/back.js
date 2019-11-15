@@ -37,6 +37,11 @@ export class Sgac {
     return this.jupAge
   }
   livingOrDying() {
-    return "hi"
+    let timeLeftOnEarth = (this.expected - this.age)
+    return timeLeftOnEarth
+    // let timeLeftOnMerc =
+    // let timeLeftOnVen =
+    // let timeLeftOnMars =
+    // let timeLeftOnJup =
   }
 }

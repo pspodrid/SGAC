@@ -24,6 +24,6 @@ describe('Sgac', () => {
   })
   test('should take in an age and return how long they have to live on earth', () => {
     let sgac = new Sgac(10);
-    expect(sgac.livingOrDying()).toEqual("hi")
+    expect(sgac.livingOrDying()).toEqual(69)
   })
 });
