@@ -53,15 +53,14 @@ export class Sgac {
       return "You should have died " + (this.mercAge - this.expected) + " years ago"
     }
   }
+  livingOrDyingVen() {
+    this.venusCalc()
+    let timeLeftOnVen = (this.expected - this.venAge)
+    if (timeLeftOnVen > 0) {
+      return "You have " + timeLeftOnVen + "years to live"
+    }
+  }
   //   else {
-  //     return "You should have died " + (this.mercAge - this.expected) + "years ago"
-  //   }
-  // }
-  // livingOrDyingVen() {
-  //   let timeLeftOnVen = (this.expected - this.venAge)
-  //   if (timeLeftOnVen > 0) {
-  //     return "You have " + timeLeftOnVen + "years left to live"
-  //   } else {
   //     return "You should have died " + (this.venAge - this.expected) + "years ago"
   //   }
   // }

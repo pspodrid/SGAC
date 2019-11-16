@@ -38,4 +38,8 @@ describe('Sgac', () => {
     let sgac = new Sgac(100);
     expect(sgac.livingOrDyingMerc()).toEqual("You should have died " + 336 + " years ago")
   })
+  test('should take in an age and reutnr how long they have to live on mercury', () => {
+    let sgac = new Sgac(10);
+    expect(sgac.livingOrDyingVen()).toEqual("You have " + 63 + "years to live")
+  })
 });
