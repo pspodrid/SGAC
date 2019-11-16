@@ -45,10 +45,12 @@ export class Sgac {
     }
   }
   livingOrDyingMerc() {
-    let timeLeftOnMerc = (this.expected - this.mercAge)
     this.mercuryCalc();
+    let timeLeftOnMerc = (this.expected - this.mercAge)
     if (timeLeftOnMerc > 0) {
       return "You have " + timeLeftOnMerc + " years to live"
+    } else {
+      return "You should have died " + (this.mercAge - this.expected) + " years ago"
     }
   }
   //   else {
