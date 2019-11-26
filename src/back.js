@@ -1,4 +1,4 @@
-export class Sgac {
+export class Calculator {
   constructor(age) {
     this.age = age;
     this.expected = 79;

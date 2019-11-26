@@ -1,49 +1,49 @@
-import { Sgac } from './../src/back.js';
+import { Calculator } from './../src/back.js';
 
-describe('Sgac', () => {
+describe('Calculator', () => {
 
   test('should take in a number and return the age', () => {
-    let sgac = new Sgac(5);
-    expect(sgac.age).toEqual(5);
+    let newCalculator = new Calculator(5);
+    expect(newCalculator.age).toEqual(5);
   });
   test('should take in an age and return age on mercury', () => {
-    let sgac = new Sgac(10);
-    expect(sgac.mercuryCalc()).toEqual(41.5);
+    let newCalculator = new Calculator(10);
+    expect(newCalculator.mercuryCalc()).toEqual(41.5);
   });
   test('should take in an age and return age on venus', () => {
-    let sgac = new Sgac(10);
-    expect(sgac.venusCalc()).toEqual(16.2)
+    let newCalculator = new Calculator(10);
+    expect(newCalculator.venusCalc()).toEqual(16.2)
   })
   test('should take in an age and reutrn age on mars', () => {
-    let sgac = new Sgac(10);
-    expect(sgac.marsCalc()).toEqual(5.3)
+    let newCalculator = new Calculator(10);
+    expect(newCalculatorsgac.marsCalc()).toEqual(5.3)
   })
   test('should take in an age and return age on jupiter', () => {
-    let sgac = new Sgac(10);
-    expect(sgac.jupCalc()).toEqual(.84)
+    let newCalculator = new Calculator(10);
+    expect(newCalculator.jupCalc()).toEqual(.84)
   })
   test('should take in an age and return how long they have to live on earth', () => {
-    let sgac = new Sgac(10);
-    expect(sgac.livingOrDying()).toEqual("You have " + 69 + "years left to live")
+    let newCalculator = new Calculator(10);
+    expect(newCalculator.livingOrDying()).toEqual("You have " + 69 + "years left to live")
   })
   test('should take in an age and return how long they have to live on earth', () => {
-    let sgac = new Sgac(100);
-    expect(sgac.livingOrDying()).toEqual("You should have died " + 21 + "years ago")
+    let newCalculator = new Calculator(100);
+    expect(newCalculator.livingOrDying()).toEqual("You should have died " + 21 + "years ago")
   })
   test('should take in an age and return how long they have to live on Mercury', () => {
-    let sgac = new Sgac(10);
-    expect(sgac.livingOrDyingMerc()).toEqual("You have " + 38 + " years to live")
+    let newCalculator = new (Calculator10);
+    expect(newCalculator.livingOrDyingMerc()).toEqual("You have " + 38 + " years to live")
   })
   test('should take in an age and return how long they have to live on Mercury', () => {
-    let sgac = new Sgac(100);
-    expect(sgac.livingOrDyingMerc()).toEqual("You should have died " + 336 + " years ago")
+    let newCalculator = new Calculator(100);
+    expect(newCalculator.livingOrDyingMerc()).toEqual("You should have died " + 336 + " years ago")
   })
   test('should take in an age and return how long they have to live on Venus', () => {
-    let sgac = new Sgac(10);
-    expect(sgac.livingOrDyingVen()).toEqual("You have " + 63 + "years to live")
+    let newCalculator = new Calculator(10);
+    expect(newCalculator.livingOrDyingVen()).toEqual("You have " + 63 + "years to live")
   })
   test('should take in an age and return how long they have to live on Venus', () => {
-    let sgac = new Sgac(200);
-    expect(sgac.livingOrDyingVen()).toEqual("You should have died " + 245 + " years ago")
+    let newCalculator = new Calculator(200);
+    expect(newCalculator.livingOrDyingVen()).toEqual("You should have died " + 245 + " years ago")
   })
 });
