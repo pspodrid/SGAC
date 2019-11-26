@@ -58,4 +58,13 @@ export class Calculator {
       return "You should have died " + (this.venAge - this.expected) + " years ago"
     }
   }
+  livingOrDyingMars() {
+    this.marsCalc()
+    let timeLeftOnMars = (this.expected - this.marsAge)
+    if (timeLeftOnMars > 0) {
+      return "You have " + timeLeftOnMars + " years to live"
+    } else {
+      return "You should have died " + (this.marsAge - this.expected) + " years ago"
+    }
+  }
 }

@@ -46,4 +46,8 @@ describe('Calculator', () => {
     let newCalculator = new Calculator(200);
     expect(newCalculator.livingOrDyingVen()).toEqual("You should have died " + 245 + " years ago")
   })
+  test('should take in an age and return how long they have to live on Mars', () => {
+    let newCalculator = new Calculator(10);
+    expect(newCalculator.livingOrDyingMars()).toEqual("You have " + 73.7 + " years to live")
+  })
 });
