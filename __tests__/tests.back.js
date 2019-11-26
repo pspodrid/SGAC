@@ -50,8 +50,12 @@ describe('Calculator', () => {
     let newCalculator = new Calculator(10);
     expect(newCalculator.livingOrDyingMars()).toEqual("You have " + 73.7 + " years to live")
   })
-  test('should take in an age and return how long they have to live on Venus', () => {
+  test('should take in an age and return how long they have to live on Mars', () => {
     let newCalculator = new Calculator(200);
     expect(newCalculator.livingOrDyingMars()).toEqual("You should have died " + 27 + " years ago")
+  })
+  test('should take in an age and return how long they have to live on Jupiter', () => {
+    let newCalculator = new Calculator(10);
+    expect(newCalculator.livingOrDyingJup()).toEqual("You have " + 78.16 + " years to live")
   })
 });

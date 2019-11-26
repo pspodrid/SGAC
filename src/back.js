@@ -67,4 +67,13 @@ export class Calculator {
       return "You should have died " + (this.marsAge - this.expected) + " years ago"
     }
   }
+  livingOrDyingJup() {
+    this.jupCalc()
+    let timeLeftOnJup = (this.expected - this.jupAge)
+    if (timeLeftOnJup > 0) {
+      return "You have " + timeLeftOnJup + " years to live"
+    } else {
+      return "You should have died " + (this.jupAge - this.expected) + " years ago"
+    }
+  }
 }
