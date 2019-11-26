@@ -32,7 +32,7 @@ describe('Calculator', () => {
   })
   test('should take in an age and return how long they have to live on Mercury', () => {
     let newCalculator = new Calculator(10);
-    expect(newCalculator.livingOrDyingMerc()).toEqual("You have " + 38 + " years to live")
+    expect(newCalculator.livingOrDyingMerc()).toEqual("You have " + 37.5 + " years to live")
   })
   test('should take in an age and return how long they have to live on Mercury', () => {
     let newCalculator = new Calculator(100);
@@ -40,7 +40,7 @@ describe('Calculator', () => {
   })
   test('should take in an age and return how long they have to live on Venus', () => {
     let newCalculator = new Calculator(10);
-    expect(newCalculator.livingOrDyingVen()).toEqual("You have " + 63 + "years to live")
+    expect(newCalculator.livingOrDyingVen()).toEqual("You have " + 62.8 + " years to live")
   })
   test('should take in an age and return how long they have to live on Venus', () => {
     let newCalculator = new Calculator(200);

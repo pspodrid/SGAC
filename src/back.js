@@ -11,29 +11,25 @@ export class Calculator {
   mercuryCalc() {
     let mercAgeTest = (this.age * 4.15)
     let mercAgeFixed = parseFloat((mercAgeTest).toFixed(1))
-    let mercAgeParse = mercAgeFixed
-     this.mercAge = mercAgeParse
+     this.mercAge = mercAgeFixed
      return this.mercAge
   }
   venusCalc() {
     let venusAgeTest = (this.age * 1.62)
     let venAgeFixed = parseFloat((venusAgeTest).toFixed(1))
-    let venAgeParse = venAgeFixed
-    this.venAge = venAgeParse
+    this.venAge = venAgeFixed
     return this.venAge
   }
   marsCalc() {
     let marsAgeTest = (this.age * .53)
     let marsAgeFixed = parseFloat((marsAgeTest).toFixed(1))
-    let marsAgeParse = marsAgeFixed
-    this.marsAge = marsAgeParse
+    this.marsAge = marsAgeFixed
     return this.marsAge
   }
   jupCalc() {
     let jupAgeTest = (this.age * .084)
     let jupAgeFixed = parseFloat((jupAgeTest).toFixed(2))
-    let jupAgeParse = jupAgeFixed
-    this.jupAge = jupAgeParse
+    this.jupAge = jupAgeFixed
     return this.jupAge
   }
   livingOrDying() {
@@ -57,7 +53,7 @@ export class Calculator {
     this.venusCalc()
     let timeLeftOnVen = (this.expected - this.venAge)
     if (timeLeftOnVen > 0) {
-      return "You have " + timeLeftOnVen + "years to live"
+      return "You have " + timeLeftOnVen + " years to live"
     } else {
       return "You should have died " + (this.venAge - this.expected) + " years ago"
     }
