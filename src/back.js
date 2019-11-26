@@ -10,29 +10,29 @@ export class Calculator {
 
   mercuryCalc() {
     let mercAgeTest = (this.age * 4.15)
-    let mercAgeFixed = mercAgeTest.toFixed(1)
-    let mercAgeParse = parseInt(mercAgeFixed)
+    let mercAgeFixed = parseFloat((mercAgeTest).toFixed(1))
+    let mercAgeParse = mercAgeFixed
      this.mercAge = mercAgeParse
      return this.mercAge
   }
   venusCalc() {
     let venusAgeTest = (this.age * 1.62)
-    let venAgeFixed = venusAgeTest.toFixed(1)
-    let venAgeParse = parseInt(venAgeFixed)
+    let venAgeFixed = parseFloat((venusAgeTest).toFixed(1))
+    let venAgeParse = venAgeFixed
     this.venAge = venAgeParse
     return this.venAge
   }
   marsCalc() {
     let marsAgeTest = (this.age * .53)
-    let marsAgeFixed = marsAgeTest.toFixed(1)
-    let marsAgeParse = parseInt(marsAgeFixed)
+    let marsAgeFixed = parseFloat((marsAgeTest).toFixed(1))
+    let marsAgeParse = marsAgeFixed
     this.marsAge = marsAgeParse
     return this.marsAge
   }
   jupCalc() {
     let jupAgeTest = (this.age * .084)
-    let jupAgeFixed = jupAgeTest.toFixed(2)
-    let jupAgeParse = parseInt(jupAgeFixed)
+    let jupAgeFixed = parseFloat((jupAgeTest).toFixed(2))
+    let jupAgeParse = jupAgeFixed
     this.jupAge = jupAgeParse
     return this.jupAge
   }

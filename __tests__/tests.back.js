@@ -16,7 +16,7 @@ describe('Calculator', () => {
   })
   test('should take in an age and reutrn age on mars', () => {
     let newCalculator = new Calculator(10);
-    expect(newCalculatorsgac.marsCalc()).toEqual(5.3)
+    expect(newCalculator.marsCalc()).toEqual(5.3)
   })
   test('should take in an age and return age on jupiter', () => {
     let newCalculator = new Calculator(10);
@@ -31,7 +31,7 @@ describe('Calculator', () => {
     expect(newCalculator.livingOrDying()).toEqual("You should have died " + 21 + "years ago")
   })
   test('should take in an age and return how long they have to live on Mercury', () => {
-    let newCalculator = new (Calculator10);
+    let newCalculator = new Calculator(10);
     expect(newCalculator.livingOrDyingMerc()).toEqual("You have " + 38 + " years to live")
   })
   test('should take in an age and return how long they have to live on Mercury', () => {
