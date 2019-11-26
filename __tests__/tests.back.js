@@ -58,4 +58,8 @@ describe('Calculator', () => {
     let newCalculator = new Calculator(10);
     expect(newCalculator.livingOrDyingJup()).toEqual("You have " + 78.16 + " years to live")
   })
+  test('should take in an age and return how long they have to live on Jupiter', () => {
+    let newCalculator = new Calculator(1000);
+    expect(newCalculator.livingOrDyingJup()).toEqual("You should have died " + 5 + " years ago")
+  })
 });
